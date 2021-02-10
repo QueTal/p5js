@@ -6,8 +6,13 @@
         <script>
             function setup() {
                 createCanvas(400, 400);
-                fill('red');
-                rect(100,100,100);
+                x = 0;
+            }
+            function draw() {
+                background(220);
+                x = x + 10;
+                if(x > 400) x = 0;
+                circle(x ,200, 100);
             }
 
         </script>
