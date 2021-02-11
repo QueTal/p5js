@@ -9,10 +9,11 @@
                 x = 0;
             }
             function draw() {
-                background(220);
-                x = x + 10;
-                if(x > 400) x = 0;
-                circle(x ,200, 100);
+                //line(pmouseX, pmouseY, mouseX, mouseY);
+                px = pow(pmouseX - mouseX, 2);
+                py = pow(pmouseY - mouseY, 2);
+                speed = sqrt(px+py);
+                circle(mouseX,mouseY, speed);
             }
 
         </script>
